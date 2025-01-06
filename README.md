@@ -1,25 +1,43 @@
+# 📱 **Detecção de objetos com YOLO e Armazenamento SMB**
 
-### Explicação do `README.md`:
-
-1. **Título**: O título do projeto descreve a funcionalidade principal (detecção de celulares com YOLO e armazenamento SMB).
-  
-2. **Requisitos**: Lista os pré-requisitos do sistema e as dependências necessárias (Python, OpenCV, YOLO e SMBClient).
-
-3. **Instalação**:
-    - **Clonagem do Repositório**: Como clonar o repositório no Git.
-    - **Ambiente Virtual**: Instruções para criar e ativar um ambiente virtual para isolar as dependências.
-    - **Instalar Dependências**: Como instalar as dependências com o `pip`.
-    - **Configuração do SMB**: Como configurar as variáveis de ambiente para a autenticação SMB.
-    - **Configuração do YOLO**: Como garantir que o arquivo do modelo YOLO está disponível.
-
-4. **Execução**: Como rodar o script e começar a detecção de celulares.
-
-5. **Parar a Detecção**: Explica como parar o processo pressionando a tecla `q`.
-
-6. **Contribuição**: Como os outros podem contribuir com o projeto.
-
-7. **Licença**: Instrução para a licença do projeto (caso seja necessário adicionar uma).
+Este projeto realiza a detecção de objetos utilizando o modelo YOLO e armazena as imagens detectadas em um servidor SMB.
 
 ---
 
-Esse `README.md` fornece uma documentação clara e objetiva para que qualquer pessoa possa entender rapidamente o que o projeto faz, como instalar e executar, e como contribuir.
+## 🔧 **Requisitos**
+
+Antes de começar, verifique se você tem as seguintes dependências instaladas:
+
+- **Python 3.x**
+- **OpenCV**
+- **YOLO** (You Only Look Once)
+- **SMBClient**
+
+---
+
+## 🛠️ **Instalação**
+
+### 1. **Clonando o Repositório**
+Clone o repositório para o seu ambiente local:
+
+```bash
+git clone https://github.com/seuusuario/seu-repositorio.git
+cd seu-repositorio
+
+
+### Explicação dos Passos:
+
+1. **Clonagem do Repositório**: Como fazer o download do repositório para seu computador.
+2. **Ambiente Virtual**: Instruções para configurar um ambiente virtual para isolar as dependências e evitar conflitos com outros projetos.
+3. **Instalação de Dependências**: Como instalar as dependências necessárias para o projeto.
+4. **Configuração do SMB**: Como configurar a autenticação SMB.
+5. **Configuração do YOLO**: Instruções para garantir que o modelo YOLO esteja configurado corretamente.
+6. **Execução**: Como rodar o script para detectar celulares em tempo real.
+7. **Parar a Detecção**: Como interromper a detecção ao pressionar a tecla `q`.
+8. **Contribuição**: Como contribuir para o projeto, incluindo como fazer um pull request.
+9. **Licença**: Instrução sobre a licença do projeto.
+10. **Notas Adicionais**: Dicas extras sobre o uso de SMB e YOLO.
+
+Esse **README.md** fornece uma documentação completa e clara para qualquer pessoa que queira configurar e executar o projeto, com todas as etapas e explicações necessárias.
+
+
