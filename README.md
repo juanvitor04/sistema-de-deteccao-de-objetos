@@ -29,5 +29,36 @@ cd seu-repositorio
 
 É necessario instalar algumas bibliotecas
 
+pip install ultralytics
+pip install smbprotocol
+
+É preciso um computador com samba confgurado e instalado
+sudo apt update
+sudo apt install samba
+sudo nano /etc/samba/smb.conf
+
+insira essas configurações
+
+[SharedFolder]
+   path = /path/to/shared/folder
+   browseable = yes
+   writable = yes
+   guest ok = no
+   valid users = vitor
+   create mask = 0700
+   directory mask = 0700
+[global]
+   server min protocol = SMB2
+   server max protocol = SMB3
+   encrypt passwords = yes
+   smb encrypt = required
+
+para executar o codigo pode executar direto  no terminal ou idle
+exemplo
+python3 teste13.py
+python teste13.py
+
+
+
 
 
