@@ -27,7 +27,7 @@ cd seu-repositorio
 pip install ultralytics
 pip install smbprotocol
 
-###Configuração do Usuário SMB
+Configuração do Usuário SMB
 
 sudo apt update
 sudo apt install samba
@@ -36,7 +36,7 @@ sudo passwd usuario_smb
 sudo smbpasswd -a usuario_smb
 sudo nano /etc/samba/smb.conf
 
-###insira essas configurações no arquivo smb.conf
+insira essas configurações no arquivo smb.conf
 
 [SharedFolder]
    path = /path/to/shared/folder
@@ -52,7 +52,7 @@ sudo nano /etc/samba/smb.conf
    encrypt passwords = yes
    smb encrypt = required
 
-### Crie as variáveis de ambiente
+Crie as variáveis de ambiente
 
 setx SAMBA_PASSWORD "usuario"
 setx SAMBA_PASSWORD "senha"
