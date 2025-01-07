@@ -24,21 +24,18 @@ Clone o repositório para o seu ambiente local:
 git clone https://github.com/juanvitor04/hello-world/edit/main/README.md
 cd seu-repositorio
 
-
-### Explicação dos Passos:
-
-É necessario instalar algumas bibliotecas
-
 pip install ultralytics
 pip install smbprotocol
 
-É preciso um computador com samba confgurado e instalado
+## Configuração do Usuário SMB
+
 sudo apt update
 sudo apt install samba
+sudo useradd -m usuario_smb
+sudo passwd usuario_smb
+sudo smbpasswd -a usuario_smb
 sudo nano /etc/samba/smb.conf
-
-insira essas configurações
-
+## insira essas configurações no arquivo smb.conf
 [SharedFolder]
    path = /path/to/shared/folder
    browseable = yes
@@ -52,13 +49,8 @@ insira essas configurações
    server max protocol = SMB3
    encrypt passwords = yes
    smb encrypt = required
+## Crie as variáveis de ambiente
+setx SAMBA_PASSWORD "usuario"
+setx SAMBA_PASSWORD "senha"
 
-para executar o codigo pode executar direto  no terminal ou idle
-exemplo
-python3 teste13.py
-python teste13.py
-
-
-
-
-
+Espero que isso ajude! Se precisar de mais alguma coisa, estou por aqui. 😄
